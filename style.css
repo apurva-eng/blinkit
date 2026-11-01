@@ -1,0 +1,29 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family: sans-serif;}
+header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid #eee;gap:15px;position:sticky;top:0;background:#fff;z-index:100;}
+.header-left{display:flex;align-items:center;gap:20px;}
+.logo{height:35px;}
+.location h4{font-size:16px;} .location p{font-size:13px;color:#666;}
+.search-bar{flex:1;max-width:500px;display:flex;align-items:center;gap:10px;background:#f8f8f8;border:1px solid #ddd;border-radius:10px;padding:10px 14px;}
+.search-bar input{border:none;background:transparent;width:100%;outline:none;}
+.header-right{display:flex;gap:15px;}
+.login{border:none;background:transparent;font-size:16px;cursor:pointer;}
+.cart{background:#0C831F;color:#fff;border:none;padding:12px 18px;border-radius:8px;font-weight:600;cursor:pointer;}
+.main-banner{display:flex;align-items:center;justify-content:space-between;padding:20px 40px;background:#fff;}
+.main-banner h1{font-size:48px;max-width:400px;} .main-banner h1 span{color:#0C831F;}
+.main-banner img{width:55%;border-radius:12px;}
+.shop-btn{margin-top:20px;background:#0C831F;color:#fff;border:none;padding:12px 24px;border-radius:8px;font-size:16px;}
+.promo-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:20px;}
+.promo-cards img{width:100%;border-radius:12px;}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;padding:20px;}
+.cat{text-align:center;border-radius:10px;background:#fafafa;padding:15px;transition:.3s;}
+.cat:hover{box-shadow:0 4px 12px rgba(0,0,0,.1);}
+.cat img{width:100%;}
+footer{background:#fcfcfc;padding:30px 20px;margin-top:20px;border-top:1px solid #eee;}
+.footer-links{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.copyright{text-align:center;margin-top:20px;color:#888;font-size:13px;}
+@media(max-width:768px){
+ header{flex-wrap:wrap;} .search-bar{order:3;max-width:100%;}
+ .main-banner{flex-direction:column;text-align:center;} .main-banner img{width:100%;margin-top:15px;}
+ .promo-cards{grid-template-columns:1fr;} .footer-links{grid-template-columns:1fr;}
+ .main-banner h1{font-size:32px;}
+}
